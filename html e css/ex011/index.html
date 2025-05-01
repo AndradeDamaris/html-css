@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens flexíveis</title>
+</head>
+<body>
+<h1> Imagens dinâmicas</h1>
+  <p> Abrimos sites em diferentes dispositivos e quando temos una imagem pode ser que ela não fique legal em um celular por exemplo. Por isso fazemos um processo sendo ele </p>
+  <ol> 
+    <li> usamos a tag <strong>&lt; pictures&gt;</strong> 
+    <li> dentro dessa tag abrimos a tag &lt;img&gt; e colocamos a imagem <Strong> maior </Strong> ou a <strong> menor </strong> <ins> NUNCA</ins> a média
+    <li> em cima da tag &lt;img&gt; abrimos uma nova tag, a tag <strong>&lt;source&gt;</strong>
+    <li> dentro dessa tag abrimos o atributo <code> media:type="(max-width: <em>valor</em>px)" </code>
+    <li> depois desse atributo colocamos o atributo <code> srcset:"sua-imagem.formato" </code> para colocar <strong> a imagem média</strong>
+    <li> por último colocamos o atributo <code> type="image/seu formato"</code>
+    <li> fechamos a tag &lt;source&gt;
+  </ol> 
+  <h2> Vamos testar</h2>
+  <picture>
+    <source media="(max-width:700px )" srcset="imagens/serena-300.jpg" type="image/jpg">
+    <source media="(max-width:1000px )" srcset="imagens/serena-700.jpg" type="image/jpg">
+    <img src="imagens/serena-1000.jpg" alt="Imagem flexivel">
+  </picture>
+  <h1> Áudios</h1>
+  <p> Vamos colocar áudio no meu site com HTML5</p>
+
+  <p> temos esse outro jeito que é o mais recomendado</p>
+  <audio preload="metadata" controls="">
+    <source src="midia/stars-above.mp3" type="audio/mpeg">
+    
+  </audio>
+  <p> Se você não conseguiu escutar infelizmente seu navegador não tem suporte pra áudio. Baixe o arquivo  <a href="midia/stars-above.mp3" target="_blank" rel="">aqui</a></p>
+</body>
+  <audio preload="metadata"controls="">
+    <source src="midia/stars-above.mp3" type="audio/mpeg">
+  </audio>
+</html>

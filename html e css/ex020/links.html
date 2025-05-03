@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links personalizados</title>
+    <style>
+      a {
+        color: red;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      
+      a:visited {
+        color: darkred;
+      }
+      
+      a:hover {
+        color: black;
+        
+      }
+      
+      
+      a:active {
+        color: darkblue;
+      }
+      
+      .especial:hover::before {
+        content: '→';
+        color: #c71e1e;
+      }
+      
+      .especial:hover::after {
+        content: '←';
+        color: #c71e1e;
+      }
+    </style>
+</head>
+<body>
+  <h1> Links personalizados</h1>
+  <ul>
+    <li> <a href="https://youtube.com/@sirgnomio?si=XVbtjCiieO-B6IJj" target="_blank"class="especial">Canal do YouTube</a></li>
+    <li><a href="https://sctoon.net/" target="_blank"> Sinesis Scan</a></li>
+    <li><a href="https://pin.it/1tywUaidQ" target="_blank">Pinterest</a></li>
+    
+  </ul>
+
+
+</body>
+</html>

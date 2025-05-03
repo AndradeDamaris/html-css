@@ -1,0 +1,52 @@
+nav {
+  background-color: #c7e97d;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* separa os lados */
+}
+
+nav .left-links {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #425b0f;
+  font-weight: bold;
+}
+
+.hamburguer-menu {
+  position: relative;
+}
+
+.hamburger {
+  font-size: 20px;
+  cursor: pointer;
+  color: #425b0f;
+  font-weight: bold;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #c7e97d;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.dropdown a {
+  display: block;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #425b0f;
+  margin: 2px 0;
+  background-color: #c7e97d;
+}
+
+.hamburguer-menu:hover .dropdown {
+  display: block;
+}
